@@ -4121,9 +4121,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BAT54C"
+		(symbol "Diode:1N5819WS"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4131,41 +4135,27 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0.635 -3.81 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "BAT54C"
-				(at -6.35 3.175 0)
+			(property "Value" "1N5819WS"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 1.905 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
-				(at -2.032 0 0)
+			(property "Footprint" "Diode_SMD:D_SOD-323"
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4175,7 +4165,7 @@
 					)
 				)
 			)
-			(property "Description" "dual schottky barrier diode, common cathode"
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4186,7 +4176,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "schottky diode common cathode"
+			(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4197,7 +4187,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4208,13 +4198,24 @@
 					)
 				)
 			)
-			(symbol "BAT54C_0_1"
+			(property "ki_fp_filters" "D*SOD?323*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N5819WS_0_1"
 				(polyline
 					(pts
-						(xy -3.175 -1.27) (xy -3.175 1.27) (xy -1.27 0) (xy -3.175 -1.27)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -4223,10 +4224,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 1.27) (xy -1.905 1.016)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -4235,162 +4236,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0) (xy 1.905 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.905 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -0.635 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -1.27) (xy -0.635 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -1.27) (xy 0.635 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.905 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 0.635 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 1.27) (xy 1.905 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -1.27) (xy 3.175 1.27) (xy 1.27 0) (xy 3.175 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 1.27 0)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -4401,11 +4247,11 @@
 					)
 				)
 			)
-			(symbol "BAT54C_1_1"
+			(symbol "1N5819WS_1_1"
 				(pin passive line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name ""
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4421,9 +4267,9 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name ""
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4431,24 +4277,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10412,6 +10240,12 @@
 		(uuid "c138edff-075e-4355-bf70-6572cb438c04")
 	)
 	(junction
+		(at 300.99 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4e1a5bf-4cec-44a6-a9f1-3c9fd3d8953e")
+	)
+	(junction
 		(at 439.42 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10952,6 +10786,16 @@
 			(type default)
 		)
 		(uuid "13307aee-b539-46a9-9215-4733d211fe71")
+	)
+	(wire
+		(pts
+			(xy 300.99 22.86) (xy 300.99 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13675ea8-218c-44fb-ba6f-779f201dbc64")
 	)
 	(wire
 		(pts
@@ -11565,6 +11409,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 41.91) (xy 300.99 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "359361d6-0c6d-4806-ad7f-e7a1a8d9135c")
+	)
+	(wire
+		(pts
 			(xy 254 30.48) (xy 252.73 30.48)
 		)
 		(stroke
@@ -11692,16 +11546,6 @@
 			(type default)
 		)
 		(uuid "3b02aa03-3e1e-4688-b0bf-b7c3d7ae9859")
-	)
-	(wire
-		(pts
-			(xy 300.99 21.59) (xy 300.99 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c9b557b-603e-417a-8f40-834c70401235")
 	)
 	(wire
 		(pts
@@ -13035,6 +12879,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 33.02) (xy 300.99 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87b36900-5443-4368-a138-abb939f63453")
+	)
+	(wire
+		(pts
 			(xy 265.43 27.94) (xy 265.43 29.21)
 		)
 		(stroke
@@ -13235,16 +13089,6 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 31.75) (xy 312.42 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fcbf1d3-7595-4473-b42a-85e1ee2f2f92")
-	)
-	(wire
-		(pts
 			(xy 335.28 43.18) (xy 325.12 43.18)
 		)
 		(stroke
@@ -13282,16 +13126,6 @@
 			(type default)
 		)
 		(uuid "925eb820-ece6-450f-80db-9778eb6f350e")
-	)
-	(wire
-		(pts
-			(xy 300.99 39.37) (xy 300.99 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9319a4da-5726-47fa-9d75-4b0703578d91")
 	)
 	(wire
 		(pts
@@ -14395,6 +14229,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 30.48) (xy 300.99 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d663dbf6-9e18-489f-911c-0100b0f59dff")
+	)
+	(wire
+		(pts
 			(xy 378.46 43.18) (xy 370.84 43.18)
 		)
 		(stroke
@@ -14905,6 +14749,16 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 31.75) (xy 312.42 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63d1d00-35b0-4591-8f3b-7b9220eabb3a")
+	)
+	(wire
+		(pts
 			(xy 107.95 232.41) (xy 110.49 232.41)
 		)
 		(stroke
@@ -15123,16 +14977,6 @@
 		)
 		(uuid "159e7a02-d0c1-4b24-b7a8-e7472b33fa16")
 	)
-	(label "VBAT"
-		(at 488.95 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "161556b3-dfa1-401a-a6bd-e507aecd29ab")
-	)
 	(label "BARO_I2C2_SCL"
 		(at 447.04 194.31 270)
 		(effects
@@ -15142,6 +14986,16 @@
 			(justify right bottom)
 		)
 		(uuid "1a9d2824-2919-4e72-a0bb-6bb57ea94c4e")
+	)
+	(label "GPS_USART1_TX"
+		(at 44.45 204.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22792fee-7778-4293-b913-e0c87bea57c5")
 	)
 	(label "HSE_IN"
 		(at 43.18 130.81 180)
@@ -15182,6 +15036,16 @@
 			(justify right bottom)
 		)
 		(uuid "2c3c1e9c-2025-4f41-b9d3-99f178fad7fb")
+	)
+	(label "GPS_USART1_RX"
+		(at 44.45 201.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d72b6fe-100a-4898-b415-6b93c35ccf54")
 	)
 	(label "DJI_UART_TX"
 		(at 44.45 143.51 180)
@@ -15233,6 +15097,16 @@
 		)
 		(uuid "37c62a14-2322-4212-a4ef-f32b73322cb6")
 	)
+	(label "RC_USART2_TX"
+		(at 556.26 318.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a97bdd1-9a8c-4ad2-91bf-13439070b41b")
+	)
 	(label "VTX_UART_TX"
 		(at 110.49 115.57 0)
 		(effects
@@ -15252,26 +15126,6 @@
 			(justify right bottom)
 		)
 		(uuid "42b496b1-7a84-412a-bf33-6b03815e2035")
-	)
-	(label "RC_USART2_TX"
-		(at 556.26 321.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4822711a-fcde-4d91-b2a1-8b921177f788")
-	)
-	(label "RC_USART2_RX"
-		(at 556.26 318.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4910b2c4-a3fa-42ba-9c05-bdc4127ee275")
 	)
 	(label "OSD_MOSI"
 		(at 501.65 148.59 180)
@@ -15332,16 +15186,6 @@
 			(justify right bottom)
 		)
 		(uuid "5af2ed22-3742-42b9-a64a-cb348f6746fc")
-	)
-	(label "GPS_USART1_RX"
-		(at 44.45 204.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5da87b97-9330-4af6-ad15-e922f39b5392")
 	)
 	(label "USB_DN"
 		(at 111.76 143.51 0)
@@ -15443,6 +15287,16 @@
 		)
 		(uuid "77f5c763-f9c6-46b6-80ff-9af2b013d775")
 	)
+	(label "RC_USART2_RX"
+		(at 556.26 321.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7eb7b2ea-bfd6-4d7b-ab99-f92b5e0f8dbc")
+	)
 	(label "OSD_CS"
 		(at 501.65 146.05 180)
 		(effects
@@ -15502,16 +15356,6 @@
 			(justify right bottom)
 		)
 		(uuid "8a57a40d-cd68-4168-aff0-36a0b552555c")
-	)
-	(label "VBAT"
-		(at 496.57 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b7fca54-a68f-4789-9b09-2563d022af8c")
 	)
 	(label "HSE_IN"
 		(at 97.79 24.13 0)
@@ -15712,16 +15556,6 @@
 			(justify left bottom)
 		)
 		(uuid "b8f09555-967b-4d71-9c3d-31c02d71f22c")
-	)
-	(label "GPS_USART1_TX"
-		(at 44.45 201.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bdcafcf1-4d1f-49bf-9446-778a5d16463a")
 	)
 	(label "BARO_I2C2_SDA"
 		(at 111.76 186.69 0)
@@ -16042,6 +15876,54 @@
 			(justify left bottom)
 		)
 		(uuid "ffc0f7e7-a209-417f-bdab-0483a4dafdee")
+	)
+	(global_label "VBAT"
+		(shape input)
+		(at 496.57 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c15f956f-a9cc-4888-b1cf-7fc1e88f5e0a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 489.17 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(shape input)
+		(at 488.95 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "faafade7-fe40-4c02-82e1-174a271e9b57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 481.55 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -21056,92 +20938,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54C")
-		(at 300.99 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5963e02c-cc8f-4939-a45b-67f851a7f202")
-		(property "Reference" "D1"
-			(at 298.45 30.4799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT54C"
-			(at 298.45 33.0199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 297.815 29.845 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
-			(at 300.99 33.782 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "dual schottky barrier diode, common cathode"
-			(at 300.99 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "8aca6e6b-1d3e-4731-b221-427b4bde9841")
-		)
-		(pin "1"
-			(uuid "bd1d8053-cfa3-46b8-84a7-b4d49dca2703")
-		)
-		(pin "2"
-			(uuid "9f03ef9a-500d-4f64-a6cc-cde0bd246a01")
-		)
-		(instances
-			(project "STM32H733"
-				(path "/ce04d259-37dd-44ba-bd8b-74529fdfccc7"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 567.69 245.11 90)
 		(unit 1)
@@ -23061,7 +22857,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 309.88 36.8362 0)
+			(at 310.134 36.068 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23643,7 +23439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 273.05 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -27624,6 +27420,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 300.99 36.83 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bba17bb8-ef7c-4e88-ae91-25538c4f6cd5")
+		(property "Reference" "D2"
+			(at 298.45 35.2424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 298.45 37.7824 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 305.435 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 300.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 300.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e04cdee-cbe0-489e-9248-67bc6d09a9da")
+		)
+		(pin "2"
+			(uuid "973f1819-2d75-4701-9e65-2c6b7f93208d")
+		)
+		(instances
+			(project "STM32H733"
+				(path "/ce04d259-37dd-44ba-bd8b-74529fdfccc7"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 133.35 66.04 0)
 		(unit 1)
@@ -27958,7 +27836,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 300.99 40.64 180)
+		(at 300.99 41.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27969,7 +27847,7 @@
 		(fields_autoplaced yes)
 		(uuid "c394868d-b51c-496e-a314-d1c5e301e385")
 		(property "Reference" "#PWR027"
-			(at 300.99 36.83 0)
+			(at 300.99 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27980,7 +27858,7 @@
 			)
 		)
 		(property "Value" "+5VUSB"
-			(at 300.99 45.72 0)
+			(at 300.99 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27990,7 +27868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 300.99 40.64 0)
+			(at 300.99 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28001,7 +27879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 300.99 40.64 0)
+			(at 300.99 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28012,7 +27890,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 300.99 40.64 0)
+			(at 300.99 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28911,6 +28789,88 @@
 			(project "STM32H733"
 				(path "/ce04d259-37dd-44ba-bd8b-74529fdfccc7"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 300.99 26.67 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0c23f0b-adfa-461d-88ee-59d3f5035385")
+		(property "Reference" "D1"
+			(at 303.53 25.7174 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 303.53 28.2574 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 305.435 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 300.99 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 300.99 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "feefa169-c7fb-4562-9279-83e2fe285306")
+		)
+		(pin "2"
+			(uuid "15ecd911-e451-497b-b8a0-3d09877bd142")
+		)
+		(instances
+			(project "STM32H733"
+				(path "/ce04d259-37dd-44ba-bd8b-74529fdfccc7"
+					(reference "D1")
 					(unit 1)
 				)
 			)
