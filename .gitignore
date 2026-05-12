@@ -1,0 +1,3 @@
+*.lck
+.history/
+STM32H733-backups/
