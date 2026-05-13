@@ -60,7 +60,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|93452500|101127500|14c2dfc1-9c30-47a5-82a5-9a6b50dec32b|5190e25e-a873-4fea-884d-31b1e1e0811c",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -140,7 +145,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.6,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.127,
@@ -760,7 +765,7 @@
         "uuid": "ce04d259-37dd-44ba-bd8b-74529fdfccc7"
       }
     ],
-    "used_designators": "U6,#PWR27,#PWR37,#PWR49-50,#PWR62,#PWR68,D1-6,C23-24,Q1,J4,J6,R15-17",
+    "used_designators": "#FLG1-6",
     "variants": []
   },
   "sheets": [
