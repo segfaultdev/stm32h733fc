@@ -261,7 +261,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -641,7 +641,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/Asraful/Desktop/export/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -765,7 +765,7 @@
         "uuid": "ce04d259-37dd-44ba-bd8b-74529fdfccc7"
       }
     ],
-    "used_designators": "#FLG1-6",
+    "used_designators": "J12-13,#PWR3,#PWR18,#PWR51,#PWR58,#PWR63,#PWR73",
     "variants": []
   },
   "sheets": [
